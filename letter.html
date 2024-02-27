@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="letter.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Dear Love.</strong>
+                        <p>
+                            Belated Happy Valentines muah, sorry ito lang nakayanan ko ngayon kasi masama pakiramdam ko hehe sana magustuhan mo to. aaminin ko 
+                            hindi ko lahat ginawa to pero lahat to pinag paguran ko hehe. sana ma gets mo. gusto ko lang sabihin na sorry sa pagiging immature ko
+                            sobra na ako minsan sorry po, sana patawarin mo ako sa lahat lahat. hindi ko na papahabain to kasi baka maging boring na. I love you baby
+                            pagaling ikaw muah hihintayin kita. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
